@@ -58,18 +58,64 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dll64\infosecapi.dll" />
+    <Content Include="dll64\libeay32.dll" />
+    <Content Include="doc\测试档案.txt" />
+    <Content Include="Icbc_Pay64.aspx" />
+    <Content Include="pay\wapPay\wapPayProduct.aspx" />
+    <Content Include="pay\wapPay\wapPayTest.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Icbc_Pay64.aspx.cs">
+      <DependentUpon>Icbc_Pay64.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Icbc_Pay64.aspx.designer.cs">
+      <DependentUpon>Icbc_Pay64.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\wapPay\wapPayProduct.aspx.cs">
+      <DependentUpon>wapPayProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\wapPay\wapPayProduct.aspx.designer.cs">
+      <DependentUpon>wapPayProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\wapPay\wapPayTest.aspx.cs">
+      <DependentUpon>wapPayTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\wapPay\wapPayTest.aspx.designer.cs">
+      <DependentUpon>wapPayTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="productKey\DMJF.crt" />
+    <Content Include="productKey\DMJF.key" />
+    <None Include="Properties\PublishProfiles\jj.pubxml" />
+    <Content Include="testKey\baoqian2020.crt" />
+    <Content Include="testKey\baoqian2020.key" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pay\pcPay\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="infosecapiLib">
+      <Guid>{C707AB73-D8FC-455C-8F64-2F6BE06E8DF5}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
