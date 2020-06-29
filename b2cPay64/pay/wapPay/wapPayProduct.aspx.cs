@@ -29,8 +29,8 @@ namespace b2cPay64.pay.wapPay
             interfaceVersion = "1.0.0.6";
             orderDate = DateTime.Now.ToString("yyyyMMddHHmmss");
             string src = "<?xml version='1.0' encoding='GBK' standalone='no'?><B2CReq><interfaceName>ICBC_WAPB_B2C</interfaceName><interfaceVersion>1.0.0.6</interfaceVersion>";
-            src = src + "<orderInfo><orderDate>" + orderDate+"0000000000" + "</orderDate><orderid>" + orderDate+"0000000000" + "</orderid><amount>1000</amount><installmentTimes>1</installmentTimes><curType>001</curType><merID>1901EE21078015</merID><merAcct>1901003219200017578</merAcct></orderInfo>";
-            src = src + "<custom><verifyJoinFlag>0</verifyJoinFlag><Language>ZH_CN</Language></custom><message><goodsID>001</goodsID><goodsName>农夫山城矿泉水</goodsName><goodsNum></goodsNum><carriageAmt></carriageAmt><merHint>达漫金服测试</merHint><remark1></remark1><remark2>remark</remark2><merURL>http://113.247.250.221/pay-web/icbc/notifyPaid.do</merURL><merVAR></merVAR><notifyType>HS</notifyType><resultType>1</resultType><backup1></backup1><backup2></backup2><backup3></backup3><backup4></backup4></message></B2CReq>";
+            src = src + "<orderInfo><orderDate>" + orderDate + "</orderDate><orderid>" + orderDate+"0000000000" + "</orderid><amount>1000</amount><installmentTimes>1</installmentTimes><curType>001</curType><merID>1901EE21078015</merID><merAcct>1901003219200017578</merAcct></orderInfo>";
+            src = src + "<custom><verifyJoinFlag>0</verifyJoinFlag><Language>zh_CN</Language></custom><message><goodsID></goodsID><goodsName></goodsName><goodsNum></goodsNum><carriageAmt></carriageAmt><merHint></merHint><remark1></remark1><remark2>remark</remark2><merURL>http://113.247.250.221/pay-web/icbc/notifyPaid.do</merURL><merVAR></merVAR><notifyType>HS</notifyType><resultType>1</resultType><backup1></backup1><backup2></backup2><backup3></backup3><backup4></backup4></message></B2CReq>";
             infosecapiLib.infosec objIcbc = new infosecapiLib.infosec();
 
             tranData = objIcbc.base64enc(src);
