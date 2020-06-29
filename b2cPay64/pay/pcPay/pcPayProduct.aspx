@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wapPayTest.aspx.cs" Inherits="b2cPay64.pay.wapPay.wapPayTest" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pcPayProduct.aspx.cs" Inherits="b2cPay64.pay.pcPay.pcPayProduct" %>
 
 <!DOCTYPE html>
 
@@ -11,13 +11,12 @@
 <meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema>
 </head>
 <body>
-<FORM name=order action=https://mywap2.dccnet.com.cn:447/ICBCWAPBank/servlet/ICBCWAPEBizServlet method=post>
+<FORM name=order action=https://b2c.icbc.com.cn/servlet/ICBCINBSEBusinessServlet method=post>
 <INPUT type=submit value=" 提 交 订 单 ">&nbsp;
 <INPUT type=text value="<%=interfaceVersion%>" name=interfaceVersion> 
 <INPUT type=text value="<%=interfaceName%>" name=interfaceName> 
 <INPUT type=text value="<%=tranData%>" name=tranData>
 <INPUT type=text value="<%=merCert%>" name=merCert>
-<INPUT type=text value="<%=clientType%>" name=clientType>
 <INPUT type=text value="<%=merSignMsg%>" name=merSignMsg>
 </form>
 </body>

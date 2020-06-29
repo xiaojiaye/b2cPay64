@@ -62,6 +62,8 @@
     <Content Include="dll64\libeay32.dll" />
     <Content Include="doc\测试档案.txt" />
     <Content Include="Icbc_Pay64.aspx" />
+    <Content Include="pay\pcPay\pcPayProduct.aspx" />
+    <Content Include="pay\pcPay\pcPayTest.aspx" />
     <Content Include="pay\wapPay\wapPayProduct.aspx" />
     <Content Include="pay\wapPay\wapPayTest.aspx" />
     <Content Include="Web.config" />
@@ -73,6 +75,20 @@
     </Compile>
     <Compile Include="Icbc_Pay64.aspx.designer.cs">
       <DependentUpon>Icbc_Pay64.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\pcPay\pcPayProduct.aspx.cs">
+      <DependentUpon>pcPayProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\pcPay\pcPayProduct.aspx.designer.cs">
+      <DependentUpon>pcPayProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\pcPay\pcPayTest.aspx.cs">
+      <DependentUpon>pcPayTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\pcPay\pcPayTest.aspx.designer.cs">
+      <DependentUpon>pcPayTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="pay\wapPay\wapPayProduct.aspx.cs">
       <DependentUpon>wapPayProduct.aspx</DependentUpon>
@@ -103,9 +119,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="pay\pcPay\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="infosecapiLib">
       <Guid>{C707AB73-D8FC-455C-8F64-2F6BE06E8DF5}</Guid>

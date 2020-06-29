@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace b2cPay64.pay.wapPay {
+namespace b2cPay64.pay.pcPay {
     
     
-    public partial class wapPayTest {
+    public partial class pcPayProduct {
     }
 }
