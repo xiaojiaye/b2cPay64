@@ -35,6 +35,7 @@ namespace b2cPay64.pay.pcPay
             tranData = objIcbc.base64enc(src);
             merSignMsg = objIcbc.sign(src, path + "testKey\\baoqian2020.key", "12345678");
             merCert = objIcbc.getPublicKey(path + "testKey\\baoqian2020.crt");
+            string j = src;
         }
     }
 }

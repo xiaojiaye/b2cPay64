@@ -64,6 +64,7 @@
     <Content Include="Icbc_Pay64.aspx" />
     <Content Include="pay\pcPay\pcPayProduct.aspx" />
     <Content Include="pay\pcPay\pcPayTest.aspx" />
+    <Content Include="pay\signContract\signContract.aspx" />
     <Content Include="pay\wapPay\wapPayProduct.aspx" />
     <Content Include="pay\wapPay\wapPayTest.aspx" />
     <Content Include="Web.config" />
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="pay\pcPay\pcPayTest.aspx.designer.cs">
       <DependentUpon>pcPayTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\signContract\signContract.aspx.cs">
+      <DependentUpon>signContract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\signContract\signContract.aspx.designer.cs">
+      <DependentUpon>signContract.aspx</DependentUpon>
     </Compile>
     <Compile Include="pay\wapPay\wapPayProduct.aspx.cs">
       <DependentUpon>wapPayProduct.aspx</DependentUpon>

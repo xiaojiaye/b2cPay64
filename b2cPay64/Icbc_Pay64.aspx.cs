@@ -264,7 +264,7 @@ namespace b2cPay64
                 }
                 catch (Exception e)
                 {
-                    return "";
+                    return e.Message;
                 }
 
             }

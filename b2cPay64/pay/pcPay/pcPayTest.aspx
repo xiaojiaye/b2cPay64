@@ -11,7 +11,8 @@
 <meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema>
 </head>
 <body>
-<FORM name=order action=https://mybank3.dccnet.com.cn/servlet/ICBCINBSEBusinessServlet method=post>
+<FORM name=order action=https://b2c3.dccnet.com.cn/servlet/ICBCINBSEBusinessServlet method=post>
+    <%--<FORM name=order action=https://mybank3.dccnet.com.cn/servlet/ICBCINBSEBusinessServlet method=post>--%>
 <INPUT type=submit value=" 提 交 订 单 ">&nbsp;
 <INPUT type=text value="<%=interfaceVersion%>" name=interfaceVersion> 
 <INPUT type=text value="<%=interfaceName%>" name=interfaceName> 
